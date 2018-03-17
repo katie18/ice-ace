@@ -1,0 +1,16 @@
+<i class="sprite sprite-adv-bus"></i>
+<i class="sprite sprite-adv-calendar"></i>
+<i class="sprite sprite-adv-certificate"></i>
+<i class="sprite sprite-adv-like"></i>
+<i class="sprite sprite-adv-ski"></i>
+<i class="sprite sprite-adv-snowboard-helmet"></i>
+<i class="sprite sprite-arrow-next"></i>
+<i class="sprite sprite-arrow-prev"></i>
+<i class="sprite sprite-arrow-right-services"></i>
+<i class="sprite sprite-flash"></i>
+<i class="sprite sprite-social-facebook"></i>
+<i class="sprite sprite-social-instagram"></i>
+<i class="sprite sprite-social-vk"></i>
+<i class="sprite sprite-social-youtube"></i>
+<i class="sprite sprite-type-ski"></i>
+<i class="sprite sprite-type-snowboard"></i>
