@@ -1,6 +1,42 @@
 .advantages-item {
-  float: left;
-  width: 33.33%;
-  padding: 0 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &__title {
+    font-family: @font-futura;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  &__text-wrap {
+    font-family: @font-futura;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #757575;
+  }
+}
+  &__descr {
+}
+.advantages-item__icon {
+  .sprite;
+
+  &--like {
+    .sprite-adv-like;
+  }
+  &--bus {
+    .sprite-adv-bus;
+  }
+  &--calendar {
+    .sprite-adv-calendar
+  }
+  &--ski{
+    .sprite-adv-ski 
+  }
+  &--helmet{
+    .sprite-adv-snowboard-helmet 
+  }
+  &--certificate{
+    .sprite-adv-certificate 
+  }
 }

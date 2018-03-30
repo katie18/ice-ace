@@ -18,17 +18,22 @@
         <span class="promo__title-desc">в Санкт-Петербурге</span>
       </h1>
     </div>
+    <button class="promo__btn">Записаться</button>
+    
+    <button class="burger">
+      <span></span>
+    </button>
   </div>
 
-  <header class="page_header">
+  <header class="page-header">
 
     <div class="page-header__inner">
-      <a class="logo" href="index.html"><img src="images/logo.png" alt="Ice-Ace"></a>
+      <div class="page-header__logo">
+        <a href="" class="logo-mob"><img src="" alt="" class="logo-mob__img"></a>
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="Ice-Ace"></a>
+      </div>
 
       <div class="page-header__drop">
-        <div class="logo-mob">
-          <a href="" class="logo-mob"><img src="" alt="" class="logo-mob"></a>
-        </div>
 
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -62,12 +67,14 @@
           </li>
         </ul>
 
-        <div class="page-header__contacts"></div>
+        <div class="page-header__contacts">
           <a class="page-header__phone" href="tel:88008008080">8 <b>(800)</b>-800-80-80</a>
           <a class="page-header__mail" href="mailto:hello@iceace.com">hello@iceace.com</a>
-          <button class="btn">Записаться</button>
         </div>
+        <button class="btn">Записаться</button>
       </div>
+
+
     </div>
   </header>
 
@@ -91,7 +98,7 @@
               <p class="services-type__text-wrap">Впервые здесь? Тогда эта возможность точно для вас. Приходите на разовое занятие и проникнетесь атмосферой школы,  познакомитесь с инструкторами и узнаете о том, как проходит обучение. После занятия мы определим ваш уровень и прикинем план занятий</p>
               <footer class="services-type__footer">
                 <span class="services-type__period">3 часа</span>
-                <a cclass="services-type__more" href="#"></a>
+                <div class="services-type__arrow"><a class="services-type__more" href="#"></a></div>
               </footer>
             </div>
           </article>
@@ -105,7 +112,7 @@
               <p class="services-type__text-wrap">Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки "как кататься как чемпион" от опытных инструкторов, подходит как для новичков, так и более опытных</p>
               <footer class="services-type__footer">
                 <span class="services-type__period">5 занятий</span>
-                <a cclass="services-type__more" href="#"></a>
+                <div class="services-type__arrow"><a class="services-type__more" href="#"></a></div>
               </footer>
             </div>
           </article>
@@ -119,7 +126,7 @@
               <p class="services-type__text-wrap">Продвинутый курс для самых вдохновленных горными лыжами и сноубордом, здесь вы не только улучшите свою технику, но и получите много дополнительных обучающих материалов и видео-уроков от участников мировых чемпионатов, здесь вы узнаете все...</p>
               <footer class="services-type__footer">
                 <span class="services-type__period">10 занятий</span>
-                <a cclass="services-type__more" href="#"></a>
+                <div class="services-type__arrow"><a class="services-type__more" href="#"></a></div>
               </footer>
             </div>
           </article>
@@ -138,39 +145,51 @@
 
         <div class="advantages__wrap-item">
           <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="нравится">
+            <div class="advantages-item__icon advantages-item__icon--like"></div>
+            <div class="advantages-item__descr">
               <h3 class="advantages-item__title">100% гарантия результата</h3>
               <p class="advantages-item__text-wrap">Уверены - научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
           </div>
-
-          <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="грамота">
-            <h3 class="advantages-item__title">Опытные инструкторы</h3>
-            <p class="advantages-item__text-wrap">У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
           </div>
 
           <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="календарь">
-            <h3 class="advantages-item__title">Индивидуальные занятия и расписание</h3>
-            <p class="advantages-item__text-wrap">Мы любим индивидуальный подход, поэтому все занятия с тренером - персональные, а график обучения составляете вы сами</p>
+            <div class="advantages-item__icon advantages-item__icon--certificate"></div>
+            <div class="advantages-item__descr">
+              <h3 class="advantages-item__title">Опытные инструкторы</h3>
+              <p class="advantages-item__text-wrap">У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
+            </div>
           </div>
 
           <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="лыжи">
-            <h3 class="advantages-item__title">Инвентарь и одежда</h3>
-            <p class="advantages-item__text-wrap">Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
+            <div class="advantages-item__icon advantages-item__icon--calendar"></div>
+              <div class="advantages-item__descr">
+                <h3 class="advantages-item__title">Индивидуальные занятия и расписание</h3>
+                <p class="advantages-item__text-wrap">Мы любим индивидуальный подход, поэтому все занятия с тренером - персональные, а график обучения составляете вы сами</p>
+            </div>
           </div>
 
           <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="шлем">
-            <h3 class="advantages-item__title">Безопасность</h3>
-            <p class="advantages-item__text-wrap">Каждый инструктор подбирает технику катания и угол наклона склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
+            <div class="advantages-item__icon advantages-item__icon--ski"></div>
+            <div class="advantages-item__descr">
+              <h3 class="advantages-item__title">Инвентарь и одежда</h3>
+              <p class="advantages-item__text-wrap">Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
+            </div>
           </div>
 
           <div class="advantages-item">
-            <img class="advantages-item__img" src="" alt="автобус">
-            <h3 class="advantages-item__title">Трансфер</h3>
-            <p class="advantages-item__text-wrap">30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
+            <div class="advantages-item__icon advantages-item__icon--helmet"></div>
+            <div class="advantages-item__descr">
+              <h3 class="advantages-item__title">Безопасность</h3>
+              <p class="advantages-item__text-wrap">Каждый инструктор подбирает технику катания и угол наклона склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
+          </div>
+          </div>
+
+          <div class="advantages-item">
+            <div class="advantages-item__icon advantages-item__icon--bus"></div>
+            <div class="advantages-item__descr">
+              <h3 class="advantages-item__title">Трансфер</h3>
+              <p class="advantages-item__text-wrap">30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
+            </div>
           </div>
 
         </div>
@@ -181,36 +200,35 @@
 
     <section class="sale">
       <div class="sale__wrap">
-        <h3 lass="sale__title">Скидки на абонементы</h3>
+        <h3 class="sale__title">Скидки на абонементы</h3>
 
       <div class="sale__wrap-item">
-        <div class="sale-item">
+        <div class="sale-item sale-item--1">
           <h3 class="sale-item__title">Пробуй</h3>
           <p class="sale-item__text-wrap">Дарим скидку 
             <span class="sale-item__text-percent">5%</span> новичкам, прошедшим разовое занятие</>
         </div>
 
-        <div class="sale-item">
+        <div class="sale-item sale-item--2">
           <h3 class="sale-item__title">Катайся вместе</h3>
           <p class="sale-item__text-wrap">Получи скидку 
             <span class="sale-item__text-percent">10%</span>, если друг записался по твоей рекомендации</p>
         </div>
 
-        <div class="sale-item">
+        <div class="sale-item--3">
           <h3 class="sale-item__title">Учись всей семьей</h3>
           <p class="sale-item__text-wrap">Покупай абонемент для себя и получи скидку 
             <span class="sale-item__text-percent">15%</span> для ребенка</p>
         </div>
       </div>
-      <button class="btn btn-border-color">Записаться</button>
-
+        <button class="btn btn-border-color">Записаться</button>
       </div>
 
     </section>
 
     <section class="team">
 
-      <div class="team__wrap">
+      <div class="team__wrap" style="background-image: url();">
         <h3 class="team__title">Команда</h3>
         <img class="team__img" src="images/main-team.jpg" alt="команда">
         <div class="team__text-wrap">

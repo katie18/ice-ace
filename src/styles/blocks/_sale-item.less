@@ -1,6 +1,32 @@
 .sale-item {
-  float: left;
-  width: 33.33%;
-  padding: 0 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+
+  font-family: @font-futura;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 700;
+  }
+  &__text-wrap {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-family: @font-futura;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+  &__text-percent{
+    color: #74e196;
+  }
+  &--1 {
+  }
+  &--2 {
+    display: none;
+  }
+  &--3 {
+  display: none;
+  }
 }

@@ -1,17 +1,25 @@
 .sale {
-  text-align: center;
+  display: flex;
   color: #fff;
   min-height: 360px;
   background-image: url("../images/bg-sale.jpg");
   background-position: center bottom;
   background-size: cover;
-&__wrap {
-  width: 1160px;
-  margin: 0 auto;
-}
-&__wrap-item:after {
-  content: '';
-  display: block;
-  clear:both;
-}
+  
+  &__wrap {
+    min-width: @content-mobile;
+    margin: 0 auto;
+
+    @media (min-width: @desktop-min) {
+      width: @content-desktop;
+    }
+  }
+  &__title {
+    font-family: @font-futura;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+  }
 }

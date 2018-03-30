@@ -1,22 +1,45 @@
 /*header*/
 .page-header{
-
+  &__drop {
+  display: flex;
+  flex-direction: column;
+  }
   &__inner {
-    overflow: hidden;
-    width: 1160px;
+    min-width: 320px;
     margin: 0 auto;
+
+    @media (min-width: @desktop-min) {
+      width: @content-desktop;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+  display: none;
   }
   &__contacts {
-    float: right;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto; 
+    @media (min-width: @desktop-min) {
+    flex-direction: row;
+    }
   }
-  &__phone{
-    float: left;
-    margin: 48px 0;
+  &__phone {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    line-height: 35px;
     color: #000;
     font-family: @font-futura;
+  }
+  &__mail {
+    font-family: @font-futura;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 35px;
   }
 }
