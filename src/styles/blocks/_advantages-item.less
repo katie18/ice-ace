@@ -1,7 +1,9 @@
 .advantages-item {
+  position: relative;
+  padding-left: 85px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
+
   &__title {
     font-family: @font-futura;
     font-size: 14px;
@@ -15,28 +17,40 @@
     line-height: 12px;
     color: #757575;
   }
-}
-  &__descr {
-}
-.advantages-item__icon {
-  .sprite;
 
-  &--like {
-    .sprite-adv-like;
+  &__descr {
   }
-  &--bus {
-    .sprite-adv-bus;
-  }
-  &--calendar {
-    .sprite-adv-calendar
-  }
-  &--ski{
-    .sprite-adv-ski 
-  }
-  &--helmet{
-    .sprite-adv-snowboard-helmet 
-  }
-  &--certificate{
-    .sprite-adv-certificate 
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    .sprite;
+
+  // &:before {
+  //   content: '';
+  //   width: 40px;
+  //   height: ;
+  // }
+
+    &--like {
+      .sprite-adv-like;
+    }
+    &--bus {
+      .sprite-adv-bus;
+    }
+    &--calendar {
+      .sprite-adv-calendar
+    }
+    &--ski{
+      .sprite-adv-ski 
+    }
+    &--helmet{
+      .sprite-adv-snowboard-helmet 
+    }
+    &--certificate{
+      .sprite-adv-certificate 
+    }
   }
 }

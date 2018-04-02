@@ -1,25 +1,47 @@
 .services-type {
+  position: relative;
   float: left;
+  overflow: hidden;
+  width: 50%;
+  border: 1px solid #fff;
   box-sizing: border-box;
 
 
+  &--one {
+  height: 166px;
+  }
+  &--two {
+  height: 83px;
+  }
+  &--three {
+  height: 83px;
+  }
   &__visual {
-
+  position: absolute;
   }
   &__img {
+  background-size: cover;
+  background-position: center center;
 
   }
   &__info {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+
 
   }
   &__title {
-
+    color: #fff;
+    font-family: @font-futura;
+    font-weight: 700;
+    font-size: 14px;
   }
   &__text-wrap {
     display: none;
   }
   &__footer {
-
+  width: 50px;
   }
   &__period {
     display: none;

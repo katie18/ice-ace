@@ -1,5 +1,5 @@
 .btn{
-  min-width: 137px;
+  display: inline-block;
   border: 3px solid #000;
   background-color: transparent;
   font-family: @font-futura;
@@ -9,13 +9,21 @@
   font-size: 15px;
   font-weight: 900;
   padding: 15px;
-  margin: 15px auto; 
 
   &-border-color {
     display: none;
     border-color: #fff;
     @media (min-width: @desktop-min) {
       display: block;
+    }
+  }
+  &--team {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 0 auto;
+    @media (min-width: @desktop-min) {
+      display: none;
     }
   }
 }
