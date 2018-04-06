@@ -1,31 +1,31 @@
 .sale {
-  display: flex;
+  position: relative;
+  padding: 50px 0;
   color: #fff;
-  min-height: 360px;
   background-image: url("../images/bg-sale.jpg");
   background-position: center bottom;
   background-size: cover;
 
-  &__container{
-    margin: 1%; 
-    width: 98%;
-    height: 98%;
-    background-color: rgba(0,0,0,.5);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .4);
+    border: 4px solid rgba(255, 255, 255, .5);
+  }
 
-    @media (min-width: @desktop-min) {
-    display: none;
-  }
-  }
   &__wrap {
-    min-width: @content-mobile;
-    margin: 0 auto;
-    min-width: 360;
-
-
+    position: relative;
+    z-index: 1;
     @media (min-width: @desktop-min) {
       width: @content-desktop;
     }
   }
+
   &__title {
     margin: 0 auto;
     font-family: @font-futura;

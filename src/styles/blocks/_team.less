@@ -1,5 +1,4 @@
 .team {
-  padding-top: 50px;
   text-align: center;
   min-width: @mobile-min;
   color: #000;
@@ -10,14 +9,6 @@
   
   &__wrap {
       position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 440px;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
 
     @media (min-width: @desktop-min) {
       width: @content-desktop;
@@ -33,11 +24,18 @@
       left: 0;
       right: 0;
       margin: auto;
-      background-image: linear-gradient(to bottom, transparent 30%, rgba(255, 255, 255, .5) 100%);
+      background-image: linear-gradient(to bottom, transparent 30%, rgba(255, 255, 255, 0.9) 80%);
       }
   }
   &__content-wrap {
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 440px;
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
   }
 
   &__title {
