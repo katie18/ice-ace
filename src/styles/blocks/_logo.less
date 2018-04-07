@@ -1,13 +1,27 @@
 .logo {
-
   display: none;
   width: 160px;
-  padding: 36px 0;
+
+  @media (min-width: @desktop-min) {
+  display: block;
+  }
+
+  &__img {
+    display: block;
+  }
+  
+  &--footer {
+    display: inline-block;
+  }
 }
 
-.logo-mob {
 
+.logo-mob {
   @media (min-width: @desktop-min) {
   display: none;
   }
+  &__img {
+    display: block;
+  }
 }
+

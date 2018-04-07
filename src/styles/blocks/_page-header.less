@@ -5,10 +5,16 @@
   left: 0;
   width: 100%;
   text-align: center;
+  z-index: 1000;
+
+  @media (min-width: @desktop-min) {
+    position: static;
+    padding: 37px 0;
+  }
 
 
   &__drop {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -16,7 +22,16 @@
     padding-bottom: 20px;
     background-color: #fff;
 
+    @media (min-width: @desktop-min) {
+      padding: 0;
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
+
   &__inner {
     position: relative;
     display: flex;
@@ -28,20 +43,21 @@
     @media (min-width: @desktop-min) {
       width: @content-desktop;
       margin: 0 auto;
+      align-items: center;
+      padding: 10px 0;
     }
   }
 
-  &__logo {
-
-  }
   &__contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:0 auto; 
+    margin: 0 auto; 
 
     @media (min-width: @desktop-min) {
-    flex-direction: row;
+      flex-direction: row;
+      margin: 0;
+      margin-right: 20px;
     }
   }
   &__phone {
@@ -59,5 +75,9 @@
     text-decoration: none;
     font-size: 20px;
     line-height: 35px;
+
+    @media (min-width: @desktop-min) {
+      display: none;
+    }
   }
 }
