@@ -5,12 +5,12 @@
   align-items: center;
 
   @media (min-width: @tablet-min) {
+    position: static;
     margin: 0;
     display: inline-block;
     width: 33%;
     text-align: center;
     vertical-align: top;
-    position: static;
     padding-left: 0;
   }
 
@@ -22,6 +22,11 @@
 
     @media (min-width: @tablet-min) {
       line-height: 14px;
+    }
+
+    @media (min-width: @desktop-min) {
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 
@@ -36,6 +41,11 @@
       text-align: left;
       color: #000;
       line-height: 14px;
+    }
+
+    @media (min-width: @desktop-min) {
+      font-size: 15px;
+      line-height: 22px;
     }
   }
 

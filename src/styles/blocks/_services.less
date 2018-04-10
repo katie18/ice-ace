@@ -31,13 +31,17 @@
     font-size: 10px;
     line-height: 35px;
     
+
+    @media (min-width: @tablet-min) {
+      font-size: 20px;
+    }
     @media (min-width: @desktop-min) {
       font-size: 20px;
-      line-height: 35px;
     }
   }
 
   &__type-wrap{
+
     @media (min-width: @tablet-min) {
       box-sizing: border-box;
       padding: 0 10px;

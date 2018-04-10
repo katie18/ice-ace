@@ -4,14 +4,17 @@
   min-height: 440px;
 
   @media (min-width: @desktop-min) {
-  min-height: 640px;
+    min-height: 640px;
   }
   
   &__wrap {
 
+    @media (min-width: @tablet-min) {
+      text-align: center;
+    }
     @media (min-width: @desktop-min) {
-    width: @content-desktop;
-    margin: 0 auto;
+      width: @content-desktop;
+      margin: 0 auto;
     }
   }
   &__title {
@@ -27,6 +30,15 @@
     color: #757575;
     font-size: 12px;
     line-height: 12px;
+
+    @media (min-width: @tablet-min) {
+      display: inline-block;
+      width: 70%;
+      font-size: 15px;
+      color: #000;
+      line-height: 22px;
+      font-weight: 700;
+    }
   }
 
   &__link {
