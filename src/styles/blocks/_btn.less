@@ -13,15 +13,20 @@
   &-border-color {
     display: none;
     border-color: #fff;
-    @media (min-width: @desktop-min) {
+
+    @media (min-width: @tablet-min) {
+      padding: 15px 30px;
+      margin-top: 50px;
       display: block;
     }
   }
+  
   &--team {
     position: relative;
     z-index: 1;
     display: flex;
     margin: 20px auto;
+
     @media (min-width: @desktop-min) {
       display: none;
     }

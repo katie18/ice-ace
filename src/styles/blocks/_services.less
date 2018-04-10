@@ -4,10 +4,11 @@
     min-width: @mobile-min;
 
     @media (min-width: @desktop-min) {
-    width: @content-desktop;
-    margin: 0 auto;
+      width: @content-desktop;
+      margin: 0 auto;
     }
   }
+
   &__title {
     text-align: center;
     color: #000;
@@ -21,6 +22,7 @@
       line-height: 35px;
     }
   }
+
   &__descr {
     text-align: center;
     color: #000;
@@ -32,11 +34,19 @@
     @media (min-width: @desktop-min) {
       font-size: 20px;
       line-height: 35px;
+    }
   }
-}
-  &__type-wrap:after {
-    content: '';
-    display: block;
-    clear:both;
+
+  &__type-wrap{
+    @media (min-width: @tablet-min) {
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      clear:both;
+    }
   }
 }

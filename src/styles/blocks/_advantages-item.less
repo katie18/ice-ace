@@ -4,22 +4,49 @@
   display: flex;
   align-items: center;
 
+  @media (min-width: @tablet-min) {
+    margin: 0;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    position: static;
+    padding-left: 0;
+  }
+
   &__title {
     font-family: @font-futura;
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
+
+    @media (min-width: @tablet-min) {
+      line-height: 14px;
+    }
   }
+
   &__text-wrap {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 12px;
     color: #757575;
+
+    @media (min-width: @tablet-min) {
+      text-align: left;
+      color: #000;
+      line-height: 14px;
+    }
   }
 
   &__descr {
+
+    @media (min-width: @tablet-min) {
+      display: flex;
+      flex-direction: column;
+    }
   }
+  
   &__icon {
     position: absolute;
     left: 0;
@@ -27,6 +54,10 @@
     bottom: 0;
     margin: auto;
     .sprite;
+
+    @media (min-width: @tablet-min) {
+      position: static;
+    }
 
   // &:before {
   //   content: '';

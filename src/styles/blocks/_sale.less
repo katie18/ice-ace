@@ -6,6 +6,10 @@
   background-position: center bottom;
   background-size: cover;
 
+  @media (min-width: @tablet-min) {
+    padding: 30px 0;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -21,11 +25,26 @@
   &__wrap {
     position: relative;
     z-index: 1;
+
+    @media (min-width: @tablet-min) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     @media (min-width: @desktop-min) {
       width: @content-desktop;
     }
   }
+  &__wrap-item{
 
+    @media (min-width: @tablet-min) {
+      display: flex;
+      margin: 0 auto;
+    }
+
+  }
   &__title {
     margin: 0 auto;
     font-family: @font-futura;
@@ -33,5 +52,9 @@
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+
+    @media (min-width: @tablet-min) {
+      text-transform: none;
+    }
   }
 }
