@@ -50,11 +50,16 @@
     font-size: 24px;
     line-height: 35px;
     font-weight: 700;
+
+    @media (min-width: @desktop-min) {
+      font-size: 40px;
+    }
   }
 }
 
 .community-photos {
   display: flex;
+  margin: 50px auto;
 
   &__link {
     flex-basis: 50%;
@@ -66,7 +71,7 @@
       display: block;
     }
 
-    @media (min-width: @tablet-min) {
+    @media (max-width: (@desktop-min - 1)) and (min-width: @tablet-min) {
       display: block;
       &:nth-child(4), &:nth-child(5), &:nth-child(6) {
         display: none;

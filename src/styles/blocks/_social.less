@@ -4,13 +4,20 @@
   align-items: center;
   padding: 0;
   
-  &--desktop {
-    display: none;
-  }
+  &--desktop{
 
+    @media (min-width: @desktop-min) {
+      display: none;
+    }
+  }
   &__item {
     list-style-type: none;
     padding: 10px;
+
+    @media (min-width: @desktop-min) {
+      padding: 20px;
+      
+    }
   }
 
   &__link {

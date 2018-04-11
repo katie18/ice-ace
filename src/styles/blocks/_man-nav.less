@@ -6,6 +6,11 @@
 
   &--footer {
   display: none;
+
+  @media (min-width: @desktop-min) {
+    display: block;
+    align-items: flex-end;
+    }
   }
   &__list{
     padding: 0;
@@ -42,6 +47,10 @@
     @media (min-width: @desktop-min) {
       font-size: 15px;
       line-height: 50px;
+    }
+
+    &--active {
+      border-bottom: 4px solid #74e196;
     }
   }
 }

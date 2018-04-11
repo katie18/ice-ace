@@ -10,28 +10,61 @@
 
 <body>
 
-  <header>
+  <header class="page-header">
+
     <div class="page-header__inner">
-      <a class="logo" href="index.html"><img src="images/logo.png" alt="Ice-Ace"></a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--activ" href="schedule.html">Расписание</a>
+      <div class="page-header__logo">
+        <a href="index.html" class="logo-mob"><img class="logo-mob__img" src="images/logo_footer-black.png" alt="Ice-Ace"></a>
+        <a class="logo" href="index.html"><img class="logo__img" src="images/logo.png" alt="Ice-Ace"></a>
+      </div>
+
+      <div class="page-header__drop">
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="schedule.html">Расписание</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="instructors.html">Инструкторы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Стоимость</a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="#">Как добраться</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="social social--desktop">
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="https://www.youtube.com/"></a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="instructors.html">Инструкторы</a>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://www.instagram.com/"></a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Стоимость</a>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://ru-ru.facebook.com/"></a>
           </li>
-          <li class="main-nav__item">
-            <a  class="main-nav__link" href="#">Как добраться</a>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/"></a>
           </li>
         </ul>
-      </nav>
-      <a class="page-header__phone" href="tel:88008008080">8 <b>(800)</b>-800-80-80</a>
-      <button class="btn">Записаться</button>
+
+        <div class="page-header__contacts">
+          <a class="page-header__phone" href="tel:88008008080">8 <b>(800)</b>-800-80-80</a>
+          <a class="page-header__mail" href="mailto:hello@iceace.com">hello@iceace.com</a>
+        </div>
+        <button class="btn">Записаться</button>
+      </div>
+
+      <button class="burger">
+        <span></span>
+      </button>
     </div>
+
+
   </header>
 
   <main>
@@ -40,8 +73,34 @@
 
       <div class="program__wrap">
         <h1 class="program__title">Выбрать программу</h1>
-        <table>
-        </table>
+
+        <form class="program-form" align="left">
+          <p class="program-form__name">Спорт</p>
+          <select name="sport-type">
+            <option selected>Выберите вид спорта</option>
+            <option>Лыжи</option>
+            <option>Сноуборд</option>
+          </select>
+          <p class="program-form__name">Инструктор</p>
+          <select name="instructor-type">
+            <option selected>Выберите инструктора</option>
+            <option>Константин</option>
+            <option>Михаил</option>
+            <option>Иван</option>
+          </select>
+          <p class="program-form__name">Дата</p>
+          <input type="date" name="calendar">
+          <p class="program-form__name">Время</p>
+          <input type="time">
+          <p class="program-form__name">Стоимость</p>
+          <select name="price">
+            <option selected>Выберите стоимость</option>
+            <option>1000</option>
+            <option>2000</option>
+            <option>3000</option>
+          </select>
+        </form>
+        <button class="btn">Записаться</button>
       
         <div class="slider">
           <div class="slider__item">
@@ -109,9 +168,10 @@
     <div class="page-footer__wrap">
 
       <div class="page-footer__row">
-        <a class="logo" href="#">
-          <img src="images/logo.png" alt="лого">
+        <a class="logo logo--footer" href="index.html">
+          <img class="logo__black" src="images/logo_footer-black.png" alt="лого">
         </a>
+
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--yt" href="https://www.youtube.com/"></a>
@@ -136,10 +196,10 @@
       <div class="page-footer__row">
 
         <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">2017 "ICE ACE" школа сноуборда и горныхъ лыж. Все права защищены</span>
+          <span class="page-footer__copyright-text">© 2017 "ICE ACE" — школа сноуборда и горных лыж. Все права защищены</span>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--footer">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="schedule.html">Расписание</a>
@@ -157,7 +217,7 @@
         </nav>
 
       </div>
-
+    </div>
   </footer>
 
 </body>
