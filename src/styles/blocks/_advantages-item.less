@@ -1,16 +1,14 @@
 .advantages-item {
   position: relative;
-  padding-left: 85px;
   display: flex;
   align-items: center;
 
   @media (min-width: @tablet-min) {
     position: static;
+    flex-direction: column;
     margin: 0;
-    display: inline-block;
-    width: 33%;
+    width: 30%;
     text-align: center;
-    vertical-align: top;
     padding-left: 0;
   }
 
@@ -58,15 +56,21 @@
   }
   
   &__icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    min-width: 100px;
     margin: auto;
-    .sprite;
 
     @media (min-width: @tablet-min) {
-      position: static;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin: 0;
+    }
+
+    &:before {
+      content: '';
+      .sprite;
+      margin: 0 auto;
     }
 
   // &:before {
@@ -76,22 +80,39 @@
   // }
 
     &--like {
-      .sprite-adv-like;
+
+      &:before {
+        .sprite-adv-like;
+      }
     }
     &--bus {
-      .sprite-adv-bus;
+
+      &:before {
+        .sprite-adv-bus;
+      }
     }
     &--calendar {
-      .sprite-adv-calendar
+
+      &:before {
+        .sprite-adv-calendar;
+      }
     }
     &--ski{
-      .sprite-adv-ski 
+
+      &:before {
+        .sprite-adv-ski;
+      }
     }
     &--helmet{
-      .sprite-adv-snowboard-helmet 
+
+      &:before {
+      .sprite-adv-snowboard-helmet;
+      }
     }
     &--certificate{
-      .sprite-adv-certificate 
+      &:before {
+      .sprite-adv-certificate;
+      }
     }
   }
 }

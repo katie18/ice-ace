@@ -16,7 +16,14 @@
 
   &__wrap-item {
     margin: 20px auto;
+
+    @media (min-width: @tablet-min) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
+
   &__title {
     font-family: @font-futura;
     text-align: center;
