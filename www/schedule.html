@@ -14,7 +14,7 @@
 
     <div class="page-header__inner">
       <div class="page-header__logo">
-        <a href="index.html" class="logo-mob"><img class="logo-mob__img" src="images/logo_footer-black.png" alt="Ice-Ace"></a>
+        <a href="index.html" class="logo-mob"><img class="logo-mob__img" src="" alt="Ice-Ace"></a>
         <a class="logo" href="index.html"><img class="logo__img" src="images/logo.png" alt="Ice-Ace"></a>
       </div>
 
@@ -75,56 +75,65 @@
         <h1 class="program__title">Выбрать программу</h1>
 
         <form class="program-form" align="left">
-          <p class="program-form__name">Спорт</p>
-          <select name="sport-type">
+
+          <label for="sport">Спорт</label>
+          <select name="sport-type" id="sport">
             <option selected>Выберите вид спорта</option>
             <option>Лыжи</option>
             <option>Сноуборд</option>
           </select>
-          <p class="program-form__name">Инструктор</p>
-          <select name="instructor-type">
+
+          <label for="instructor">Инструктор</label>
+          <select name="instructor-type" id="instructor">
             <option selected>Выберите инструктора</option>
             <option>Константин</option>
             <option>Михаил</option>
             <option>Иван</option>
           </select>
-          <p class="program-form__name">Дата</p>
-          <input type="date" name="calendar">
-          <p class="program-form__name">Время</p>
-          <input type="time">
-          <p class="program-form__name">Стоимость</p>
-          <select name="price">
+
+          <label for="calendar">Выберите дату</label>
+          <input type="text" id="calendar">
+          
+          <label for="time">Выберите время</label>
+          <input type="text" id="time">
+          
+          <label for="price">Стоимость</label>
+          <select id="price">
             <option selected>Выберите стоимость</option>
             <option>1000</option>
             <option>2000</option>
             <option>3000</option>
           </select>
+
+          <button class="btn btn--schedule">Записаться</button>
         </form>
-        <button class="btn">Записаться</button>
+
+
       
         <div class="slider">
           <div class="slider__item">
-            <div class="instructor-card">
+
+            <div class="program-card">
           
               <figure class="program-card__photo">
                 <img src="images/up-instructor4.jpg" alt="Константин">
-                <figcaption class="program-card__photo-desc">Константин Константинопольский</figcaption>
+                <figcaption class="program-card__photo-desc">Константин <br> Константинопольский</figcaption>
               </figure>
 
               <div class="program-card__info">
                 <h2 class="program-card__title">Free ride/ продвинутый уровень</h2>
                 <span class="program-card__start-date">Дата занятий - 30 марта 2017 года</span>
-                </div>
                 <h3 class="program-card__period">Абонемент на разовое посещение (3 часа)</h3>
                 <p class="program-card__desc">Занятие рассчитано на опытных учеников и проходит вне подготовительной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытные инструктор научит контролировать лыжи на любой поверхности.</p>
-                <a class="program-card__more" href="#">Узнать подробнее</a>
-              </div>
+                <span class="program-card__price">2000 ₽</span>
 
               <div class="program-card__buy">
-                <span class="program-card__price">2000 ₽</span>
-                <a class="btn btn_buy" href="#">Купить</a>
+                <a class="btn btn--schedule-buy" href="#">Купить</a>
+                <a class="program-card__more" href="#">Узнать подробнее</a>
               </div>
             </div>
+          </div>
+
             <div class="program__slider-pagination">
 
               <a href="#" class="slider-arrow slider-arrow-left"></a>
@@ -155,8 +164,18 @@
 
     <section class="call-back">
       <div class="call-back__wrap">
-        <h2>Заказать обратный звонок</h2>
-              
+        <h2 lass="call-back__title">Заказать обратный звонок</h2>
+      <form class="call-back-form" align="left">
+        <label for="first_name">*Имя</label>
+        <input type="text" placeholder="Введите ваше имя" id="first_name">
+        <label for="last_name">*Фамилия</label>
+        <input type="text" placeholder="Введите вашу фамилию" id="last_name">
+        <label for="phone">Телефон</label>
+        <input type="text" placeholder="8(800)000-00-00" id="phone">
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" placeholder="Оставьте ваши комментарии и пожелания" cols="50" rows="10"></textarea>
+        <button class="btn btn--schedule-submit">Отправить</button>
+      </form>
       </div>
     </section>
 
