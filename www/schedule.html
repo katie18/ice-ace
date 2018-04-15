@@ -108,7 +108,61 @@
 
           <button class="btn btn--schedule">Записаться</button>
         </form>
-
+        
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Спорт</th>
+                <th>Инструктор</th>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Стоимость</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Сноуборд</td>
+              <td>Константин Константинопольский</td>
+              <td>30.03.2017</td>
+              <td>12:00</td>
+              <td>2000 руб.</td>
+              <td><a class="table__link" href="#">Записаться</a></td>
+            </tr>
+            <tr>
+              <td>Сноуборд</td>
+              <td>Константин Константинопольский</td>
+              <td>01.04.2017</td>
+              <td>12:00</td>
+              <td>2000 руб.</td>
+              <td><a class="table__link" href="#">Записаться</a></td>
+            </tr>
+            <tr>
+              <td>Лыжи</td>
+              <td>Степан Александров</td>
+              <td>01.04.2017</td>
+              <td>13:00</td> 
+              <td>3000 руб.</td>
+              <td><a class="table__link" href="#">Записаться</a></td>
+            </tr>
+            <tr>
+              <td>Лыжи</td>
+              <td>Виталий Сергеев</td>
+              <td>03.04.2017</td>
+              <td>14:00</td> 
+              <td>4000 руб.</td>
+              <td><a class="table__link" href="#">Записаться</a></td>
+            </tr>
+            <tr>
+              <td>Сноуборд</td>
+              <td>Арсений Петров</td>
+              <td>04.03.2017</td> 
+              <td>14:00</td>
+              <td>4000 руб.</td>
+              <td><a class="table__link" href="#">Записаться</a></td>
+            </tr>
+          </table>
+        </div>
 
       
         <div class="slider">
@@ -116,22 +170,31 @@
 
             <div class="program-card">
           
-              <figure class="program-card__photo">
-                <img src="images/up-instructor4.jpg" alt="Константин">
-                <figcaption class="program-card__photo-desc">Константин <br> Константинопольский</figcaption>
-              </figure>
+              <div class="program-card__instructor">
+                <div class="program-card__photo-wrap">
+                  <img src="images/up-instructor4.jpg" alt="Константин" class="program-card__photo">
+                </div>
+                  <div class="program-card__photo-desc">Константин <br> Константинопольский</div>
+              </div>
 
               <div class="program-card__info">
-                <h2 class="program-card__title">Free ride/ продвинутый уровень</h2>
-                <span class="program-card__start-date">Дата занятий - 30 марта 2017 года</span>
-                <h3 class="program-card__period">Абонемент на разовое посещение (3 часа)</h3>
-                <p class="program-card__desc">Занятие рассчитано на опытных учеников и проходит вне подготовительной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытные инструктор научит контролировать лыжи на любой поверхности.</p>
-                <span class="program-card__price">2000 ₽</span>
+
+                <div class="program-card__text">
+                  <h2 class="program-card__title">Free ride/ продвинутый уровень</h2>
+                  <span class="program-card__start-date">Дата занятий - 30 марта 2017 года</span>
+                  <h3 class="program-card__period">Абонемент на разовое посещение (3 часа)</h3>
+                  <p class="program-card__desc">Занятие рассчитано на опытных учеников и проходит вне подготовительной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытные инструктор научит контролировать лыжи на любой поверхности.</p>
+              </div>
 
               <div class="program-card__buy">
+                <span class="program-card__price">2000 ₽</span>
                 <a class="btn btn--schedule-buy" href="#">Купить</a>
-                <a class="program-card__more" href="#">Узнать подробнее</a>
               </div>
+
+              <div class="program-card__more">
+                <a class="program-card__more-link" href="#">Узнать подробнее</a>
+              </div> 
+
             </div>
           </div>
 
@@ -165,7 +228,7 @@
 
     <section class="call-back">
       <div class="call-back__wrap">
-        <h2 lass="call-back__title">Заказать обратный звонок</h2>
+        <h2 class="call-back__title">Заказать обратный звонок</h2>
       <form class="call-back-form" align="left">
         <label for="first_name">*Имя</label>
         <input type="text" placeholder="Введите ваше имя" id="first_name">

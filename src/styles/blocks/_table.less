@@ -1,0 +1,50 @@
+.table-wrapper {
+
+}
+
+.table {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  empty-cells: hide;
+  border-collapse:collapse;
+  margin: 20px 0 40px 0;
+
+  @media (max-width: (@tablet-min - 1)) {
+    display: none;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    font-family: @font-futura;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: inherit;
+    text-transform: uppercase;
+    color: #74e196;
+  }
+}
+th {
+  font-family: @font-futura;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 20px 10px;
+}
+td {
+  font-family: @font-futura;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #000;
+
+  &:last-child:hover {
+    background-color: #74e196;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+}

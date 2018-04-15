@@ -12,11 +12,19 @@
     font-size: 24px;
     line-height: 24px;
     font-family: @font-futura;
+
+    @media (min-width: @tablet-min) {
+      text-align: center;
+    }
   }
 }
-.program-form{
+.program-form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-min) {
+    display: none;
+  }
 
 
 }
