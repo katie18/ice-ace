@@ -11,19 +11,30 @@
     padding: 0 5px;
   }
 
+  @media (min-width: @desktop-min) {
+    padding: 0;
+  }
+
   &--one {
+
     @media (max-width: (@tablet-min - 1)) {
       height: 166px;
     }
     @media (min-width: @desktop-min) {
+      padding-right: 20px;
+      box-sizing: border-box;
       width: 33.33%;
     }
   }
+
   &--two {
+
     @media (max-width: (@tablet-min - 1)) {
       height: 83px;
     }
     @media (min-width: @desktop-min) {
+      padding: 0 0 0 20px;
+      box-sizing: border-box;
       width: 66.66%;
     }
   }
@@ -34,7 +45,9 @@
       display: none;
     }
     @media (min-width: @desktop-min) {
+      padding: 40px 0 0 20px;
       display: block;
+      box-sizing: border-box;
       width: 66.66%;
     }
     @media (max-width: (@tablet-min - 1)) {
@@ -52,23 +65,22 @@
     @media (min-width: @tablet-min) {
       position: static; 
     }
+
     @media (min-width: @desktop-min) {
-      float: left;
+      padding-bottom: 40px;
     }
 
-    &--two {
+    &--visual-mode {
 
       @media (min-width: @desktop-min) {
-        width: 50%;
-      }
-    }
-    &--three {
-
-      @media (min-width: @desktop-min) {
+        box-sizing: border-box;
+        padding: 0 20px 0 0 ;
+        float: left;
         width: 50%;
       }
     }
   }
+
   &__img {
     // background-size: cover;
     // background-position: center center;
@@ -96,12 +108,27 @@
       display: block;
       position: static;
     }
+
     @media (min-width: @desktop-min) {
-      float: left;
+      height: 290px;
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    &--info-mode {
+
+      @media (min-width: @desktop-min) {
+        box-sizing: border-box;
+        padding-left: 20px;
+        float: left;
+        width: 50%;
+      }
     }
   }
 
   &__title {
+    margin: 0;
     color: #fff;
     font-family: @font-futura;
     font-weight: 700;
@@ -130,12 +157,15 @@
     width: 50px;
     @media (min-width: @tablet-min) {
       width: 100%;
-    }
-
-    @media (min-width: @tablet-min) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @media (min-width: @desktop-min) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
     }
   }
 

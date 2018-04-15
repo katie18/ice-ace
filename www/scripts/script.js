@@ -1,1 +1,6 @@
-console.log('script work!');
+$(document).ready(function(){
+
+  $(function() {
+    $('select').selectric();
+  });
+})
