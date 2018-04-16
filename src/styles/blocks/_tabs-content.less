@@ -1,0 +1,50 @@
+.tabs-content {
+  margin: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+
+  &__item {
+  }
+
+  &__main {
+    position: relative;
+  }
+
+  &__instructor-photo {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+
+  &__instructor-img {
+    display: block;
+    width: 100%;
+  }
+  &__instructor-info { 
+  }
+  &__instructor-name {
+    position: absolute;
+    display: block;
+    bottom: 20%;
+    padding-left: 10px;
+    font-family: @font-futura;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 23px;
+
+    @media (min-width: @tablet-min) {
+      color: #000;
+    }
+  }
+}

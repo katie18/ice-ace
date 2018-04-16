@@ -1,6 +1,6 @@
 .btn{
   display: inline-block;
-  border: 3px solid #000;
+  border: 2px solid #000;
   background-color: transparent;
   font-family: @font-futura;
   text-transform: uppercase;
@@ -9,6 +9,14 @@
   font-size: 15px;
   font-weight: 600;
   padding: 15px;
+  cursor: pointer;
+
+  &--team {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 20px auto;
+  }
 
   &--schedule {
     margin-top: 50px;
@@ -33,11 +41,28 @@
       display: block;
     }
   }
-  
-  &--team {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    margin: 20px auto;
+
+  &--instructors {
+    margin: 10px;
+    bottom: 5%;
+    position: absolute;
+    border-color: #74e196;
+    color: #fff;
   }
+
+  &--likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 56px;
+    height: 40px;
+  }
+
+  &--after-rewiew {
+    display: block;
+    margin: 30px auto;
+  }
+  
+
 }

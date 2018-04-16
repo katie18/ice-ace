@@ -1,0 +1,43 @@
+.instructors-menu {
+  padding: 0;
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__name {
+    display: block;
+    width: 40px;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: @font-futura;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 23px;
+  }
+}

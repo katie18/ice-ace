@@ -1,0 +1,77 @@
+.instructor-features {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    width: 70%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__type-name {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: @font-futura;
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__type-img {
+    display: none;
+
+    @media (min-width: @tablet-min) {
+      display: block;
+    }
+  }
+
+    &__type-desc {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: @font-futura;
+    font-weight: 600;
+    color: #74e196;
+    width: 40%;
+  }
+
+  &__likes {
+    position: absolute;
+    padding: 5px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  &__icon-flash {
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // margin: auto 0;
+    // margin-left: 10px;
+    .sprite;
+    .sprite-flash;
+    }
+
+    &__likes-number {
+      padding-left: 10px;
+      font-size: 20px;
+      font-family: @font-futura;
+      font-weight: 600;
+      color: #000;
+    }
+
+  &__thanks-text {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: @font-futura;
+    font-weight: 600;
+    color: #000;
+  }
+}
