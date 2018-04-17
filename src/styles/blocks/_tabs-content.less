@@ -3,11 +3,16 @@
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
 
-  &__item {
+  @media (min-width: @tablet-min) {
+    border: none;
   }
 
-  &__main {
-    position: relative;
+  &__item {
+
+    @media (min-width: @tablet-min) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__instructor-photo {
@@ -23,14 +28,36 @@
       right: 0;
       margin: auto;
       background-color: rgba(0, 0, 0, .2);
+
+      @media (min-width: @tablet-min) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @tablet-min) {
+      display: block;
+      width: 30%;
+
     }
   }
 
   &__instructor-img {
     display: block;
     width: 100%;
+
+    @media (min-width: @tablet-min) {
+      width: 232px;
+      height: 232px;
+    }
   }
   &__instructor-info { 
+
+    @media (min-width: @tablet-min) {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+    }
   }
   &__instructor-name {
     position: absolute;
@@ -44,6 +71,8 @@
     line-height: 23px;
 
     @media (min-width: @tablet-min) {
+      font-size: 24px;
+      position: static;
       color: #000;
     }
   }

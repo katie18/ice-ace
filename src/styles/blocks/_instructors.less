@@ -1,6 +1,10 @@
 .instructors {
 
   &__wrap{
+    @media (min-width: @desktop-min) {
+      padding: 0 60px;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -46,9 +50,7 @@
   &__features-wrap {
     padding: 0 10px;
   }
-  &__education-wrap {
-    padding: 0 10px;
-  }
+
   &__title-rewiew {
     text-align: center;
     font-weight: 700;
@@ -56,6 +58,10 @@
     color: #000;
     font-size: 24px;
     font-family: 'PT Sans', sans-serif;
+
+    @media (min-width: @tablet-min) {
+      display: none;
+    }
   }
   &__row {
     width: 100%;
@@ -63,6 +69,10 @@
     background-position: 0% 50%;
     background-size: cover;
     background-image: url("../images/bg-rewiew.jpg");
+
+    @media (min-width: @tablet-min) {
+      margin: 20px 0;
+    }
   }
 }
 

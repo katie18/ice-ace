@@ -1,6 +1,18 @@
 .instructor-info {
 
 
+  @media (min-width: @tablet-min) {
+    display: flex;
+  }
+
+  &__education {
+    padding: 0 10px;
+    
+    @media (min-width: @tablet-min) {
+      width: 50%;
+    }
+  }
+
   &__title {
     margin: 0 auto;
     font-weight: 700;
@@ -8,6 +20,10 @@
     font-size: 14px;
     line-height: 22px;
     font-family: @font-futura;
+
+    @media (min-width: @tablet-min) {
+      font-size: 20px;
+    }
   }
 
   &__desc {
@@ -17,6 +33,12 @@
     color: #757575;
     font-size: 12px;
     line-height: 12px;
+
+    @media (min-width: @tablet-min) {
+      color: #000;
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__exp {
@@ -26,6 +48,12 @@
     color: #757575;
     font-size: 12px;
     line-height: 12px;
+
+    @media (min-width: @tablet-min) {
+      font-size: 14px;
+      line-height: 18px;
+      color: #000;
+    }
   }
 
   &__plus {
@@ -36,11 +64,22 @@
     color: #757575;
     font-size: 12px;
     line-height: 12px;
+
+    @media (min-width: @tablet-min) {
+      font-size: 14px;
+      line-height: 18px;
+      color: #000;
+    }
   }
 
   &__visual {
     position: relative;
     padding-top: 20px;
+
+    @media (min-width: @tablet-min) {
+      width: 50%;
+      padding-left: 30px;
+    }
   }
 
   iframe {

@@ -48,6 +48,13 @@
     position: absolute;
     border-color: #74e196;
     color: #fff;
+
+    @media (min-width: @tablet-min) {
+      position: static;
+      display: block;
+      height: 46px;
+      color: #000;
+    }
   }
 
   &--likes {
@@ -62,6 +69,10 @@
   &--after-rewiew {
     display: block;
     margin: 30px auto;
+
+    @media (min-width: @tablet-min) {
+      display: none;
+    }
   }
   
 
