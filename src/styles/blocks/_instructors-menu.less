@@ -2,24 +2,27 @@
   padding: 0;
   margin: 0 auto;
   display: flex;
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .2);
-  }
+  // justify-content: center;
 
   &__item {
     list-style-type: none;
+    position: relative;
   }
 
   &__link {
+    position: relative;
+    display: block;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, .2);
+    }
   }
 
   &__img {

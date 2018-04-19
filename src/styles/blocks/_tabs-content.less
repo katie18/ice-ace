@@ -11,8 +11,12 @@
 
     @media (min-width: @tablet-min) {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
     }
+  }
+
+  &__main-info {
+    position: relative;
   }
 
   &__instructor-photo {
@@ -53,16 +57,14 @@
   &__instructor-info { 
 
     @media (min-width: @tablet-min) {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-
+      display: none;
     }
+
   }
   &__instructor-name {
     position: absolute;
     display: block;
-    bottom: 20%;
+    bottom: 25%;
     padding-left: 10px;
     font-family: @font-futura;
     font-size: 20px;
@@ -76,4 +78,11 @@
       color: #000;
     }
   }
+
+  &__features-wrap {
+
+    @media (min-width: @tablet-min) {
+      width: 70%;
+    }
+  }   
 }

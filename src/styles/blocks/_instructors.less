@@ -1,9 +1,15 @@
 .instructors {
 
-  &__wrap{
-    @media (min-width: @desktop-min) {
-      padding: 0 60px;
-      text-align: center;
+  @media (min-width: @desktop-min) {
+    padding: 0 60px;
+  }
+
+  &__tab-wrap{
+    padding-top: 5px;
+
+    @media (min-width: @tablet-min) {
+      padding-top: 20px;
+      box-sizing: border-box;
     }
   }
 
@@ -47,9 +53,7 @@
     cursor: pointer;
   }
     
-  &__features-wrap {
-    padding: 0 10px;
-  }
+
 
   &__title-rewiew {
     text-align: center;
