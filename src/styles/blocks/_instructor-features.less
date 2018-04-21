@@ -1,38 +1,16 @@
 .instructor-features {
-  margin: 15px auto;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-min) {
     margin: 0;
-  }
-
-
-  &__all {
-    display: flex;
-    justify-content: center;
-    padding: 0 10px;
-
-    @media (min-width: @tablet-min) {
-      padding: 0;
-      justify-content: space-between;
-    }
-  }
-
-  &__items {
-    @media (min-width: @tablet-min) {
-      display: flex;
-    }
-
-    @media (min-width: @desktop-min) {
-      padding-left: 100px;
-    }
+    flex-direction: row;
   }
 
   &__item {
     margin: 0;
     width: 70%;
-    padding: 5px;
+    padding: 5px 0;
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
@@ -42,8 +20,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      width: 150px;
+      justify-content: flex-start;
+      width: auto;
       padding: 0;
     }
   }
@@ -73,7 +51,7 @@
 
     @media (min-width: @tablet-min) {
       font-size: 20px;
-      margin: 10px;
+      margin: 10px 0;
     }
   }
 

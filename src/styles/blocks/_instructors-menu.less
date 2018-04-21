@@ -2,9 +2,20 @@
   padding: 0;
   margin: 0 auto;
   display: flex;
+  overflow-x: scroll;
+
+  @media (min-width: @tablet-min) {
+    max-width: 1160px;
+  }
 
   @media (min-width: @desktop-min) {
     justify-content: center;
+  }
+
+
+  @media (min-width: @desktop-min) {
+    justify-content: center;
+    max-width: 1160px;
   }
 
   &__item {
@@ -13,8 +24,10 @@
   }
 
   &__link {
+    overflow: hidden;
     position: relative;
     display: block;
+
 
     &:before {
       content: '';
@@ -33,6 +46,10 @@
 
     &:active:before {
       background-color: rgba(116, 225, 160, .2);
+    }
+
+    &:hover .instructors-menu__name {
+      bottom: -80px;
     }
   }
 
@@ -54,5 +71,6 @@
     font-weight: 600;
     color: #fff;
     line-height: 23px;
+    transition: all 1s ease;
   }
 }

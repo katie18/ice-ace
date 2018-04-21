@@ -1,25 +1,5 @@
 .instructor-info {
 
-
-  @media (min-width: @tablet-min) {
-    padding-top: 20px;
-    display: flex;
-  }
-
-  @media (min-width: @desktop-min) {
-    padding: 30px 0;
-    display: flex;
-  }
-
-  &__education {
-    padding: 0 10px;
-    
-    @media (min-width: @tablet-min) {
-      padding: 0;
-      width: 50%;
-    }
-  }
-
   &__title {
     margin: 0 auto;
     font-weight: 700;
@@ -52,7 +32,12 @@
     }
   }
 
-  &__exp {
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
     text-align: left;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
@@ -70,40 +55,5 @@
       font-size: 16px;
       line-height: 22px;
     }
-  }
-
-  &__plus {
-    margin: 0;
-    text-align: left;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    color: #757575;
-    font-size: 12px;
-    line-height: 12px;
-
-    @media (min-width: @tablet-min) {
-      font-size: 14px;
-      line-height: 18px;
-      color: #000;
-    }
-
-    @media (min-width: @desktop-min) {
-      font-size: 16px;
-      line-height: 22px;
-    }
-  }
-
-  &__visual {
-    position: relative;
-    padding-top: 20px;
-
-    @media (min-width: @tablet-min) {
-      width: 50%;
-      padding-left: 30px;
-    }
-  }
-
-  iframe {
-    display: block;
   }
 }

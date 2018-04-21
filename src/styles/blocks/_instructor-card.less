@@ -1,0 +1,120 @@
+.instructor-card {
+  margin: 0 15px;
+  border: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  &__photo {
+    position: relative;
+
+    @media (min-width: @tablet-min) {
+      flex-basis: 30%;
+      // width: 220px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__photo-box {
+    position: relative;
+
+    @media (min-width: @tablet-min) {
+      width: 220px;
+    }
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, .3);
+
+      @media (min-width: @tablet-min) {
+        content: normal;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__photo-desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media (min-width: @tablet-min) {
+      display: none;
+    }
+  }
+
+  &__photo-name {
+    text-align: left;
+    color: #fff;
+  }
+
+  &__name {
+    display: none;
+
+    @media (min-width: @tablet-min) {
+      margin-top: 0;
+      display: block;
+    }
+  }
+
+  &__features {
+    display: flex;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-min) {
+      flex-basis: 70%;
+      flex-grow: 1;
+       padding-top: 20px;
+    }
+  }
+
+  &__links {
+    
+    .btn--instructors {
+      display: none;
+      @media (min-width: @desktop-min) {
+        display: block;
+      }
+    }
+  }
+
+  &__info {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-min) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__visual {
+    @media (min-width: @tablet-min) {
+      flex-basis: 50%;
+    }
+
+    iframe {
+      display: block;
+    }
+  }
+}

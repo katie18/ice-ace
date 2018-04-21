@@ -76,68 +76,71 @@
         <h1 class="instructors__title">Инструкторы школы</h1>
 
         <div class="instructors__search">
-            <form class="instructors__search-form">
+          <form class="instructors__search-form">
             <input type="text" placeholder="Начните вводить имя">
-            <a class="instructors__search-btn"><i class="fas fa-search"></i></a>
-            </form>
+            <button class="instructors__search-btn"><i class="fas fa-search"></i></button>
+          </form>
         </div>
 
         <div class="instructors__tabs">
 
           <ul class="instructors-menu">
+
             <li class="instructors-menu__item">
-              <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/up-instructor1.jpg" alt=""></a>
-              <span class="instructors-menu__name">Арсений Петров</span>
+              <a class="instructors-menu__link" href="#">
+                <img class="instructors-menu__img" src="images/up-instructor1.jpg" alt="">
+                <span class="instructors-menu__name">Арсений Петров</span>
+              </a>
             </li>
+
             <li class="instructors-menu__item">
-              <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/up-instructor2.jpg" alt=""></a>
+              <a class="instructors-menu__link" href="#">
+                <img class="instructors-menu__img" src="images/up-instructor2.jpg" alt="">
+                <span class="instructors-menu__name">Иван Викторов</span>
+              </a>
             </li>
+
             <li class="instructors-menu__item">
-              <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/up-instructor3.jpg" alt=""></a>
-              <span class="instructors-menu__name">Степан Александров</span>
+              <a class="instructors-menu__link" href="#">
+                <img class="instructors-menu__img" src="images/up-instructor3.jpg" alt="">
+                <span class="instructors-menu__name">Степан Александров</span>
+              </a>
             </li>
+
             <li class="instructors-menu__item">
-              <a class="instructors-menu__link instructors-menu__link--activ" href="#"><img class="instructors-menu__img" src="images/up-instructor4.jpg" alt=""></a>
+              <a class="instructors-menu__link instructors-menu__link--activ" href="#">
+                <img class="instructors-menu__img" src="images/up-instructor4.jpg" alt="">
+                <span class="instructors-menu__name">Константин Константинопольский</span>
+              </a>
             </li>
+
             <li class="instructors-menu__item">
-              <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/up-instructor5.jpg" alt=""></a>
-              <span class="instructors-menu__name">Виталий Сергеев</span>
+              <a class="instructors-menu__link" href="#">
+                <img class="instructors-menu__img" src="images/up-instructor5.jpg" alt="">
+                <span class="instructors-menu__name">Виталий Сергеев</span>
+              </a>
             </li>
           </ul>
-        </div>
-
-        <div class="instructors__tab-wrap">
 
           <div class="tabs-content">
-
             <div class="tabs-content__item">
-
-              <div class="tabs-content__main-info-wrap">
-
-                <div class="tabs-content__main-info">
-                  <div class="tabs-content__instructor-photo">
-                    <img  class="tabs-content__instructor-img" src="images/up-instructor4.jpg" alt="">
+              <div class="instructor-card">
+                
+                <div class="instructor-card__photo">
+                  <div class="instructor-card__photo-box">
+                    <img src="images/up-instructor4.jpg" alt="">
                   </div>
-                  <div class="tabs-content__instructor-info">
-                    <h2 class="tabs-content__instructor-name">Константин Константинопольский</h2>
+                  <div class="instructor-card__photo-desc">
+                    <h2 class="instructor-card__photo-name">Константин Константинопольский</h2>
                     <button class="btn btn--instructors">Записаться</button>
                   </div>
                 </div>
-              </div>
 
-
-              <div class="tabs-content__features-wrap">
-                
-                <div class="instructor-features">
-
-<!--                   <div class="instructor-features__item--add"> -->
-                  <h2 class="instructor-features__name">Константин Константинопольский</h2>
-<!--                     <button class="btn btn--instructors-features">Записаться</button>
-                  </div>
- -->
-                  <div class="instructor-features__all">
-
-                    <div class="instructor-features__items">
+                <div class="instructor-card__features">
+                  <div class="instructor-card__description">
+                    <h2 class="instructor-card__name">Константин Константинопольский</h2>
+                    
+                    <div class="instructor-features">
                       <div class="instructor-features__item">
                         <span class="instructor-features__type-name">Спорт</span>
                         <img class="instructor-features__type-img" src="" alt="">
@@ -153,40 +156,45 @@
                         <span class="instructor-features__type-name">Стиль</span>
                         <span class="instructor-features__type-desc">#allround #freeride #skiicross</span>
                       </div>
-                  </div>
+                    </div>
 
-                  <div class="instructor-features__likes">
-                    <button class="btn btn--likes">
-                      <div class="instructor-features__icon-flash"></div>
-                      <span class="instructor-features__likes-number">5</span>
-                    </button>
-                    <span class="instructor-features__thanks-text">Спасибо!</span>
+                  </div>
+                  <div class="instructor-card__links">
+                    <button class="btn btn--instructors">Записаться</button>
+
+                    <div class="likes">
+                      <button class="btn btn--likes">
+                        <span class="likes__count">5</span>
+                      </button>
+                      <span class="likes__message">Спасибо!</span>
+                    </div>
+
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-            <div class="tabs-content__info-wrap">
+                <div class="instructor-card__info">
 
-              <div class="instructor-info">
-
-                <div class="instructor-info__education">
-                  <h3 class="instructor-info__title">Образование</h3>
-                  <p class="instructor-info__desc">Национальная лига инструкторов, сертификат инструктора по горным лыжам, г. Санкт-Петербург (2014 г.)</p>
-                  <p class="instructor-info__exp">Занимается горными лыжами с 2002 года. Первый взрослый разряд по шгорным лыжам - 2010 года. Опыт тренерской работы с 2012 года.</p>
-                  <p class="instructor-info__plus">3 место на чемпионате Ленинградской области по горным лыжам.</p>
-                  <p class="instructor-info__plus">1 место на чемпионате Карелии по горным лыжам.</p>
+                  <div class="instructor-info">
+                    <h3 class="instructor-info__title">Образование</h3>
+                    <p class="instructor-info__desc">Национальная лига инструкторов, сертификат инструктора по горным лыжам, г. Санкт-Петербург (2014 г.)</p>
+                    <ul class="instructor-info__list">
+                      <li class="instructor-info__item">Занимается горными лыжами с 2002 года.</li>
+                      <li class="instructor-info__item">Первый взрослый разряд по шгорным лыжам - 2010 года.</li>
+                      <li class="instructor-info__item">Опыт тренерской работы с 2012 года.</li>
+                    </ul>
+                    <ul class="instructor-info__list">
+                      <li class="instructor-info__item">3 место на чемпионате Ленинградской области по горным лыжам.</li>
+                      <li class="instructor-info__item">1 место на чемпионате Карелии по горным лыжам.</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="instructor-info__visual">
+
+                <div class="instructor-card__visual">
                   <iframe width="100%" height="235px" src="https://www.youtube.com/embed/P2mxXlX-vn8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
-            </div>
-      </div>
 
-            <h3 class="instructors__title-rewiew">Отзывы</h3>
-            <div class="instructors__row">
+              <h3 class="instructors__title-rewiew">Отзывы</h3>
               <blockquote class="rewiew">
                 <cite class="rewiew__author">
                   <span class="rewiew__author-name">Марина Ильина</span>
@@ -194,31 +202,38 @@
                 </cite>
                 <p class="rewiew__text">Костя - отличный тренер! Провела с ним всего одно занятие, чего, в принципе мне и было достаточно. Я и раньше занималась горными лыжами, и мне нужно было вспомнить и наверстать упущенное. Инструктор очень пунктуальный, вежливый и тактичный. Цели я своей добилась, он помог мне вновь встать на лыжи и закрепить свои навыки даже за одно занятие.</p>
               </blockquote>
+              <button class="btn btn--after-rewiew">Записаться</button>
             </div>
-            <button class="btn btn--after-rewiew">Записаться</button>
+          </div>
+
         </div>
 
-        
+                
         <div class="instructors__down-wrap">
           <div class="instructors__tabs">
             <ul class="instructors-menu">
               <li class="instructors-menu__item">
-                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor1.jpg" alt=""></a>
-                <span class="instructors-menu__name">Иван Артемов</span></li>
+                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor1.jpg" alt=""><span class="instructors-menu__name">Иван Артемов</span>
+                </a>
+              </li>
               <li class="instructors-menu__item">
-                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor2.jpg" alt=""></a>
-                <span class="instructors-menu__name">Петр Иванов</span></li>
+                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor2.jpg" alt=""><span class="instructors-menu__name">Петр Иванов</span>
+                </a>
+              </li>
               <li class="instructors-menu__item">
-                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor3.jpg" alt=""></a>
-                <span class="instructors-menu__name">Андрей Степанов</span></li>
+                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor3.jpg" alt=""><span class="instructors-menu__name">Андрей Степанов</span></a>
+              </li>
               <li class="instructors-menu__item">
-                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor4.jpg" alt=""></a>
-              <span class="instructors-menu__name">Данила Алексеев</span></li>
+                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor4.jpg" alt=""><span class="instructors-menu__name">Данила Алексеев</span></a>
+              </li>
               <li class="instructors-menu__item">
-                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor5.jpg" alt=""></a>
-                <span class="instructors-menu__name">Дмитрий Егоров</span></li>
+                <a class="instructors-menu__link" href="#"><img class="instructors-menu__img" src="images/down-instructor5.jpg" alt=""><span class="instructors-menu__name">Дмитрий Егоров</span>
+                </a>
+                </li>
             </ul>
+          </div>
         </div>
+
       </div>
     </section>
   </main>

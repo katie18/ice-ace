@@ -2,8 +2,6 @@
   align-items: stretch;
   flex-grow: 1;
 
-
-
   &--footer {
   display: none;
 
@@ -13,6 +11,7 @@
     width: 70%;
     }
   }
+
   &__list {
     padding: 0;
     
@@ -39,11 +38,12 @@
     border-bottom: 1px solid #74e196;
 
     @media (min-width: @desktop-min) {
+      display: block;
       padding-left: 20px;
       border: none;
     }
-
   }
+
   &__link {
     margin: 0 auto;
     text-decoration: none;
@@ -57,9 +57,10 @@
       font-size: 15px;
     }
 
-
     &--active {
-      border-bottom: 4px solid #74e196;
+      @media (min-width: @desktop-min) {
+        border-bottom: 4px solid #74e196;
+      }
     }
   }
 }

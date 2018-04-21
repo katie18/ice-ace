@@ -30,35 +30,11 @@ $(document).ready(function(){
     ]
   });
 
-  $('.instructors-menu').slick({
-    infinite    : true,
-    dots        : false,
-    arrows      : false,
-    mobileFirst : true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings  : {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 1280,
-        settings  : {
-          slidesToShow: 6
-        }
-      }
-    ]
-  });
 
   $('.slider').slick({
-    dots        : false,
-    arrows      : true,
-    slidesToShow: 1,
+    dots        : true,
+    arrows      : false,
+    slidesToShow: 1
   });
 
   $('.burger').on('click', function() {
