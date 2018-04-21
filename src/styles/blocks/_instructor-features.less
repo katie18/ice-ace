@@ -23,6 +23,10 @@
     @media (min-width: @tablet-min) {
       display: flex;
     }
+
+    @media (min-width: @desktop-min) {
+      padding-left: 100px;
+    }
   }
 
   &__item {
@@ -48,11 +52,15 @@
       display: none;
 
       @media (min-width: @tablet-min) {
-        width: 100%;
         display: block;
         margin-top: 0;
         margin-left: 45px;
         font-size: 24px;
+      }
+
+      @media (min-width: @desktop-min) {
+        font-size: 30px;
+        padding-left: 100px;
       }
     }
 
@@ -91,6 +99,10 @@
 
     @media (min-width: @tablet-min) {
       color: #000;
+    }
+
+    @media (min-width: @desktop-min) {
+      font-size: 17px;
     }
 
     &--sport {
