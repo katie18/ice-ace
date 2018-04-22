@@ -6,16 +6,12 @@
   width: 100%;
   text-align: center;
   z-index: 1000;
-  background-color: transparent;
+  background-color: #fff;
   transition: background-color .3s ease;
 
   @media (min-width: @desktop-min) {
     position: static;
     padding: 37px 0;
-  }
-
-  &.is-scroll {
-    background-color: #fff;
   }
 
   &__drop {
@@ -87,5 +83,13 @@
     @media (min-width: @desktop-min) {
       display: none;
     }
+  }
+}
+
+.page-header--main {
+  background-color: transparent;
+
+  &.is-scroll {
+    background-color: #fff;
   }
 }

@@ -20,7 +20,7 @@
     width: 30px;
     height: 4px;
     border-radius: 2px;
-    background-color: white;
+    background-color: #000;
     transition: all .3s ease;
   }
 
@@ -66,7 +66,7 @@
       bottom: 0;
       margin: auto;
       border-radius: 2px;
-      background-color: white;
+      background-color: #000;
       transition: all .3s ease;
     }
   }
@@ -91,6 +91,20 @@
     span:after {
       transform: rotate(135deg);
       background-color: #000;
+    }
+  }
+}
+
+.burger--main-page {
+  &:before,
+  &:after {
+    background-color: #fff;
+  }
+
+  span {
+    &:before,
+    &:after {
+      background-color: #fff;
     }
   }
 }

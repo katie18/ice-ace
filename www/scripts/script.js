@@ -4,10 +4,6 @@ $(document).ready(function(){
   if ( isSelect.length !== 0 ) {
     $('select').selectric();
   }
-    
-  // $('.community-photos').slick();
-
-
 
   $('.community-photos').slick({
     dots        : true,
@@ -37,22 +33,29 @@ $(document).ready(function(){
     slidesToShow: 1
   });
 
-  $('.burger').on('click', function() {
-    let nav = $('.page-header__drop');
-    let burger = $(this);
-    // let header
 
-    if ( burger.hasClass('is-open') ) {
-      nav.slideUp();
-      burger.removeClass('is-open');
-      $('.logo-mob__img').attr('src', 'images/logo-white.png');
+  let isMainPage = $('.page-header').hasClass('page-header--main');
+
+  $('.burger').on('click', function() {
+    let burger = $(this);
+    let isOpen = burger.hasClass('is-open');
+
+    if ( isOpen && isMainPage ) {
+      closeDrop(burger);
+      showWhiteLogo();
+      return;
+    } else if ( isOpen ) {
+      closeDrop(burger);
       return;
     }
 
-    nav.slideDown();
-    burger.addClass('is-open');
-    $('.logo-mob__img').attr('src', 'images/logo_footer-black.png');
+    openDrop(burger);
+    if ( isMainPage ) {
+      showBlackLogo();
+    }
   });
+
+
 
   $(window).resize(function(){
     if ( $(window).width() >= 1280 ) {
@@ -64,16 +67,47 @@ $(document).ready(function(){
 
 
   $(document).scroll(function(){
-    if ( $(document).scrollTop() > 30 ) {
+    if ( $(document).scrollTop() > 30 && isMainPage ) {
       $('.page-header').addClass('is-scroll');
       $('.burger').addClass('is-scroll');
-      $('.logo-mob__img').attr('src', 'images/logo_footer-black.png');
-    } else {
+      showBlackLogo();
+    } else if ( $(document).scrollTop() <= 30 && isMainPage) {
       $('.page-header').removeClass('is-scroll');
       $('.burger').removeClass('is-scroll');
-      $('.logo-mob__img').attr('src', 'images/logo-white.png');
+      showWhiteLogo();
     }
   });
 
 
-})
+  function closeDrop(burger) {
+    let nav = $('.page-header__drop');
+    nav.slideUp();
+    burger.removeClass('is-open');
+  }
+
+  function openDrop(burger) {
+    let nav = $('.page-header__drop');
+    nav.slideDown();
+    burger.addClass('is-open');
+  }
+
+  function showWhiteLogo() {
+    $('.logo-mob__img--black').css({
+        display: 'none'
+    });
+
+    $('.logo-mob__img--white').css({
+        display: 'block'
+    });
+  }
+
+  function showBlackLogo() {
+    $('.logo-mob__img--black').css({
+        display: 'block'
+    });
+    $('.logo-mob__img--white').css({
+        display: 'none'
+    });
+  }
+
+});
