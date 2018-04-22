@@ -71,7 +71,7 @@ $(document).ready(function(){
     } else {
       $('.page-header').removeClass('is-scroll');
       $('.burger').removeClass('is-scroll');
-      // $('.logo-mob__img').attr('src', 'images/logo-white.png');
+      $('.logo-mob__img').attr('src', 'images/logo-white.png');
     }
   });
 

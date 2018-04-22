@@ -5,6 +5,7 @@
   @media (min-width: @tablet-min) {
     margin: 0;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   &__item {
@@ -20,8 +21,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      width: auto;
       padding: 0;
     }
   }
@@ -89,32 +88,5 @@
         display: none;
       }
     }
-  }
-
-  &__likes {
-
-    @media (min-width: @tablet-min) {
-    }
-  }
-
-  &__icon-flash {
-    .sprite;
-    .sprite-flash;
-    }
-
-    &__likes-number {
-      padding-left: 10px;
-      font-size: 20px;
-      font-family: @font-futura;
-      font-weight: 600;
-      color: #000;
-    }
-
-  &__thanks-text {
-    font-size: 14px;
-    line-height: 14px;
-    font-family: @font-futura;
-    font-weight: 600;
-    color: #000;
   }
 }

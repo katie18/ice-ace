@@ -55,7 +55,8 @@
 
   &--instructors {
     border-color: #74e196;
-    color: #fff;
+    color: #000;
+    margin-bottom: 30px;
   }
 
   &--instructors-features {
@@ -73,6 +74,12 @@
     padding: 0;
     width: 56px;
     height: 40px;
+
+    &:before {
+      content:'';
+      .sprite;
+      .sprite-flash;
+    }
   }
 
   &--after-rewiew {

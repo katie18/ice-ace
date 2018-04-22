@@ -8,6 +8,16 @@
     border: none;
   }
 
+  @media (min-width: @desktop-min) {
+    margin: 0;
+  }
+  &__features {
+
+    @media (min-width: @tablet-min) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   &__photo {
     position: relative;
 
@@ -105,6 +115,8 @@
 
     @media (min-width: @tablet-min) {
       flex-basis: 50%;
+      padding-left: 0;
+      padding-right: 20px;
     }
   }
 
